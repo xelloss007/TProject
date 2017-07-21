@@ -3,6 +3,7 @@ package com.tacademy.data;
 public class Data {
 
 	private String name;
+	private int age;
 	public Data() {
 		// TODO Auto-generated constructor stub
 
@@ -17,14 +18,19 @@ public class Data {
 	}
 
 	
-	@Override
-	public String toString() {
-		return "Data [name=" + name + "]";
+	public int getAge() {
+		return age;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		new Data();
+	public void setAge(int age) {
+		this.age = age;
 	}
+
+	@Override
+	public String toString() {
+		return "Data [name=" + name + ", age=" + age + "]";
+	}
+
+
 
 }
